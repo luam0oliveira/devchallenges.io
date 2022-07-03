@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --sides-padding: 1.1rem;
+  --gray-1: #333333;
+  --gray-2: #4f4f4f;
+  --gray-4: #bdbdbd;
+  --orange: #f2994a;
+  --footer-color: #828282;
+
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gray-1);
+  margin-bottom: 1.3rem;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 2.4rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* HEADER */
+
+#header {
+  padding: 3.2rem var(--sides-padding) 0;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+#about {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+#about p {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gray-2);
+}
+
+#about #dots {
+  margin-top: 0.4rem;
+  width: 1.3rem;
+}
+
+/* MAIN */
+
+#main {
+  width: 100%;
+  padding: 0 var(--sides-padding);
+  margin-bottom: 13rem;
+}
+
+#main figure {
+  border-radius: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 2.4rem;
+}
+
+#informations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3rem;
+}
+
+#informations > div {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+#informations > div:first-child {
+  grid-column: 1/-1;
+  margin-bottom: 2rem;
+}
+
+#informations > div:first-of-type .description,
+#informations > div:first-of-type i {
+  color: orange;
+}
+
+#ingredients {
+  margin-bottom: 3rem;
+}
+
+#ingredients-cracker {
+  margin-bottom: 4.2rem;
+}
+
+i {
+  font-size: 1.4rem;
+  color: var(--gray-2);
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--gray-4);
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+/* Ingredients */
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+input {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+label {
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+label strong {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: var(--gray-1);
+}
+
+label i {
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Instructions */
+
+#instructions{
+  margin-bottom: 2.6rem;
+}
+
+#instructions h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-align: left;
+}
+
+.item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.item > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 90%;
+}
+
+.item > p strong {
+  color: var(--gray-1);
+}
+
+.item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  background: var(--orange);
+  height: 3.5rem;
+  border-radius: 0.6rem;
+}
+
+.item div span {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* Footer main */
+.reference {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gray-4);
+}
+
+/* FOOTER */
+#footer{
+  margin-bottom: 2.4rem;
+  font-family: Montserrat,sans-serif;
+  text-align: center;
+  color: var(--footer-color);
+}
+
+#footer address{
+  font-size: 1.4rem;
+  font-style: normal;
+  text-align: center;
+  color: var(--footer-font-color);
+}
+
+#footer address a {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 1200px) {
+  :root{
+    --sides-padding: 23.4rem;
+  }
+
+  /* HEADER */
+  h1 {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+  }
+
+  #about p {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  /* MAIN  */
+  #main{
+    margin-bottom: 9rem;
+  }
+
+  #ingredients{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  #informations{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 3rem;
+    padding: 6rem 0 6rem 4rem; 
+    box-shadow: 0 0 2rem 0 #0000001A;
+    border-radius: 1.2rem;
+  }
+
+  #informations > div:first-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  
+  .description {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  
+  .checkbox{
+    margin-bottom: 1.2rem;
+  }
+
+  i {
+    font-size: 2.8rem;
+    color: var(--gray-2);
+  }
+
+  label {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  
+  label i {
+    font-size: initial;
+  }
+
+  .item > p {
+    width: 95%;
+  }
+
+  .item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%; 
+  }
+
+  #instructions{
+    margin-bottom: 5.7rem;
+  }
+
+  .reference {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
